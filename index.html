@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="Css/style.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Results Summary Component</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="cards">
+        <div class="left-card">
+          <div class="left">
+            <h1 class="left-title">Your Result</h1>
+            <div class="score">
+              <p class="score-num">76</p>
+              <p class="score-outof">of 100</p>
+            </div>
+            <h1 class="heading">Great</h1>
+            <p class="description">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="right-card">
+          <div class="right">
+            <h1 class="right-title">Summary</h1>
+            <div class="results">
+              <ul class="list-items">
+                <li class="list-item reaction">
+                  <div class="attribute">
+                    <img src="/assets/images/icon-reaction.svg" class="icon" />
+                    <p class="text">Reaction</p>
+                  </div>
+                  <p class="list-score"><strong>80</strong> / 100</p>
+                </li>
+
+                <li class="list-item memory">
+                  <div class="attribute">
+                    <img src="/assets/images/icon-memory.svg" class="icon" />
+                    <p class="text">Memory</p>
+                  </div>
+                  <p class="list-score"><strong>92</strong> / 100</p>
+                </li>
+
+                <li class="list-item verbal">
+                  <div class="attribute">
+                    <img src="/assets/images/icon-verbal.svg" class="icon" />
+                    <p class="text">Verbal</p>
+                  </div>
+                  <p class="list-score"><strong>61</strong> / 100</p>
+                </li>
+
+                <li class="list-item visual">
+                  <div class="attribute">
+                    <img src="/assets/images/icon-visual.svg" class="icon" />
+                    <p class="text">Visual</p>
+                  </div>
+                  <p class="list-score"><strong>72</strong> / 100</p>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <a href="#" class="btn">Continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

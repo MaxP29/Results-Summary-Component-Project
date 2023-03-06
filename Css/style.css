@@ -1,0 +1,242 @@
+/* General */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 144rem;
+  height: 100vh;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 40%;
+  max-width: 50%;
+}
+
+/* Left Card */
+
+.left-card {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 3rem;
+  z-index: 10;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+}
+
+.left-title {
+  color: rgb(235, 241, 255, 0.8);
+  text-align: center;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+
+.heading {
+  color: #fff;
+}
+
+.score {
+  margin-top: 4rem;
+  padding: 4rem 5.5rem;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 100rem;
+}
+
+.score-num {
+  font-size: 6.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.score-outof {
+  color: rgb(235, 241, 255, 0.4);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.heading {
+  margin-top: 2.4rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.description {
+  margin-top: 1rem;
+  text-align: center;
+  color: rgb(235, 241, 255, 0.7);
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+/* Right Card */
+
+.right-card {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  border-bottom-left-radius: 0;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+  margin-left: -2rem;
+}
+
+.attribute {
+  display: flex;
+  gap: 5rem;
+}
+
+.right {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5.5rem;
+  z-index: 10;
+}
+
+.right-title {
+  margin-top: 4rem;
+  color: rgba(48, 59, 90, 0.9);
+  margin-bottom: 3rem;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.list-item {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+}
+
+.text {
+  margin-left: -4rem;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%, 0.6);
+  background-color: rgb(255, 87, 87, 0.1);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%, 0.6);
+  background-color: rgba(255, 176, 31, 0.1);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%, 0.6);
+  background-color: rgb(0, 189, 145, 0.1);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%, 0.6);
+  background-color: rgba(17, 37, 212, 0.1);
+}
+
+.list-score {
+  color: hsl(224, 30%, 27%, 0.5);
+}
+
+strong {
+  color: hsl(224, 30%, 27%);
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1.4rem;
+  background-color: rgb(48, 59, 90);
+  color: #fff;
+  border-radius: 4rem;
+}
+
+.btn:hover,
+.btn:active {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%));
+}
+
+@media (max-width: 25em) {
+  .container {
+    height: 50%;
+    max-width: 37.5rem;
+    justify-content: left;
+  }
+
+  .cards {
+    grid-template-columns: 38rem;
+  }
+
+  .left-card {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+  }
+
+  .left-title {
+    margin-top: 2rem;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
+
+  .right {
+    margin: 0 4rem;
+  }
+
+  .right-card {
+    padding-bottom: 4rem;
+  }
+
+  .right-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .score {
+    margin-top: 2rem;
+    padding: 2rem 3.5rem;
+  }
+
+  .score-num {
+    font-size: 5.4rem;
+  }
+
+  .list-item {
+    padding: 2rem;
+  }
+
+  .btn {
+    margin-top: 2rem !important;
+  }
+}
